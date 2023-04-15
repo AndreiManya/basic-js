@@ -28,11 +28,11 @@ function repeater( e, obj ) {
                                     .concat(add)
                                     .concat(i+1 !== addtimesChecked ? addseparChecked : '');
         }
-    for(let k = 0; k<reptimesCheked; k++) {
-      repeated = repeated
-                          .concat(noRepeatStr)
-                          .concat(k+1 !== reptimesCheked ? separChecked : '')
-    }
+        for(let k = 0; k<reptimesCheked; k++) {
+          repeated = repeated
+                              .concat(noRepeatStr)
+                              .concat(k+1 !== reptimesCheked ? separChecked : '')
+        }
     return repeated;
   }
   return newstr(e, obj.repeatTimes, obj.separator, obj.addition, obj.additionRepeatTimes, obj.additionSeparator)
